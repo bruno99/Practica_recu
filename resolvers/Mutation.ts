@@ -72,7 +72,7 @@ const Mutation = {
       const found = await carsCollection.find({ id: args.car.id });
       if (!found) throw new GQLError("car does not exist");
 
-      const { plate, driver, status } = args.coche;
+      const { plate, driver, status } = args.car;
       const car = {
         plate,
         driver: ctx.user.email,
@@ -98,7 +98,7 @@ const Mutation = {
   ): Promise<boolean> => {
     try {
       const db: Database = ctx.db;
-      const carsCollection = db.collection<CocheSchema>("CarsCollection");
+      const carsCollection = db.collection<CarSchema>("CarsCollection");
       const usersCollection = db.collection<UsuarioSchema>("UsersCollection");
 
       const found = await carsCollection.findOne({

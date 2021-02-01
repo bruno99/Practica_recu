@@ -41,6 +41,7 @@ type Queries {
    getCars: [Car!]!
    getDrivers: [User!]!
    getClients: [User!]!
+   getStatus: [Car!]!
 }
 type Mutations{
    addUser(data: UserInput): User!

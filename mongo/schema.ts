@@ -1,8 +1,8 @@
 
 export enum Role {
-DRIVER,
-CLIENT,
-ADMIN,
+DRIVER = "CLIENT",
+CLIENT = "DRIVER",
+ADMIN = "ADMIN",
 }
 export interface ClientSchema{
      email: string;

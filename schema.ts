@@ -39,6 +39,7 @@ input UserInput{
 type Queries {
    getTrips: [Trip!]!
    getCars: [Car!]!
+   getCar: [Car!]!
    getDrivers: [User!]!
    getClients: [User!]!
    getStatus: [Car!]!

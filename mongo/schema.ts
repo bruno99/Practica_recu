@@ -4,7 +4,7 @@ DRIVER = "CLIENT",
 CLIENT = "DRIVER",
 ADMIN = "ADMIN",
 }
-export interface ClientSchema{
+export interface UserSchema{
      email: string;
      role: Role,
      password: string,

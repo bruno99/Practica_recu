@@ -1,7 +1,19 @@
+import {Database} from "https://deno.land/x/mongo@v0.12.1/mod.ts";
 Import {Collection, Database} from "https://deno.land/x/mongo@v0.13.0/mod.ts";
-import { IContext, IUser } from "../types.ts"
+import { IContext, IUser, ITrip, ICar } from "../types.ts"
+import { CarSchema, UserSchema, TripSchema } from "../mongo/schema.ts";
 import { GQLError } from "https://deno.land/x/oak_graphql@0.6.2/mod.ts";
- 
+
+
+
+ interface IGetCarArgs {
+  plate: string;
+}
+
+interface IGetStatusArgs {
+  avialable: available;
+}
+
 export const Query = {
  
   getCar: async(parent: any, args; aby, ctx: IContext): Promise<CarSchema[]> => {

@@ -8,18 +8,18 @@ enum Role{
    ADMIN 
  }
    
-type Travel{
+type Trip{
 driver: User!
 client: User!
 car: Car!
-id: ID!
+_id: ID!
 }
 
 
 type Car{
 driver: User!
 plate: String!
-available: Boolean
+available: Boolean!
 }
 
 

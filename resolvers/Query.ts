@@ -1,5 +1,5 @@
-import {Database} from "https://deno.land/x/mongo@v0.12.1/mod.ts";
-Import {Collection, Database} from "https://deno.land/x/mongo@v0.13.0/mod.ts";
+
+import {Collection, Database} from "https://deno.land/x/mongo@v0.13.0/mod.ts";
 import { IContext, IUser, ITrip, ICar } from "../types.ts"
 import { CarSchema, UserSchema, TripSchema } from "../mongo/schema.ts";
 import { GQLError } from "https://deno.land/x/oak_graphql@0.6.2/mod.ts";

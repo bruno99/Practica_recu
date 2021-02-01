@@ -1,4 +1,5 @@
 import { Collection } from  "https://deno.land/x/mongo@v0.13.0/ts/collection.ts";
+import { GQLError } from "https://deno.land/x/oak_graphql@0.6.2/mod.ts";
 import { CarSchema } from "../mongo/schema.ts";
 import { IContext } from "../types.ts";
 
